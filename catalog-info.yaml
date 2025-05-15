@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: kxf6jsdlx-nodejs-gitops
+  description: This is GitOps manifest for kxf6jsdlx-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=kxf6jsdlx-nodejs
+    backstage.io/kubernetes-id: kxf6jsdlx-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: kxf6jsdlx-nodejs
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:kxf6jsdlx-nodejs

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: kxf6jsdlx-nodejs-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/kxf6jsdlx-nodejs-gitops
